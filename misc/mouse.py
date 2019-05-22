@@ -46,13 +46,13 @@ def scroll_up(m):
 # Voice commands
 ctx.commands = {
     'click': backdated_click,
-    'right click': backdated_rightclick, 'righty': backdated_rightclick,
+    '(right click | righty)': backdated_rightclick,
     'dub click': backdated_dubclick,
-    'trip click': backdated_tripclick, 'triplick': backdated_tripclick,
-    'drag': backdated_drag, 'press': backdated_drag, 'hold': backdated_drag,
+    '(trip click | triplick)': backdated_tripclick,
+    '(drag | press | hold)': backdated_drag,
     'release': backdated_release,
     'shift click': shift_click,
     'command click': command_click,
-    'scroll down': scroll_down, 'wheel down': scroll_down,
-    'scroll up': scroll_up, 'wheel up': scroll_up,
+    '(scroll down | wheel down)': scroll_down,
+    '(scroll up | wheel up)': scroll_up,
 }
